@@ -3,7 +3,7 @@ require('dotenv').config();
 const nodemailer = require("nodemailer");
 
 exports.handler = async (event) => {
-  return JSON.stringify(event);
+  return JSON.stringify(event.email);
   // let transporter = nodemailer.createTransport({
   //   host: process.env.SMTP_SERVER,
   //   port: 587,
